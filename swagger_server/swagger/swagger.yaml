@@ -95,15 +95,13 @@ components:
     Student:
       required:
       - first_name
-      - gradeRecords
       - last_name
-      - student_id
       type: object
       properties:
         student_id:
           type: number
           format: integer
-          example: 12345
+          example: 123
         first_name:
           type: string
           example: John
@@ -120,7 +118,7 @@ components:
           items:
             $ref: '#/components/schemas/GradeRecord'
       example:
-        student_id: 12345
+        student_id: 123
         last_name: Smith
         first_name: John
         gradeRecords:
